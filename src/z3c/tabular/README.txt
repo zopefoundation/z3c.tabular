@@ -124,7 +124,7 @@ a link which knows hot to select the item:
   >>> print contentSubFormTable.render()
   <form action="http://127.0.0.1" method="post"
         enctype="multipart/form-data" class="edit-form"
-        name="subFormTable" id="subFormTable">
+        id="subFormTable" name="subFormTable">
     <div class="viewspace">
       <div>
       <table width="100%" border="0" cellspacing="0" cellpadding="0">
@@ -186,7 +186,7 @@ set the relevant data in the request:
   >>> selectedItemTable.__name__ = 'view.html'
   >>> selectedItemTable.update()
   >>> print selectedItemTable.render()
-  <form action="http://127.0.0.1" method="post" enctype="multipart/form-data" class="edit-form" name="subFormTable" id="subFormTable">
+  <form action="http://127.0.0.1" method="post" enctype="multipart/form-data" class="edit-form" id="subFormTable" name="subFormTable">
     <div class="viewspace">
       <div>
       <table width="100%" border="0" cellspacing="0" cellpadding="0">
@@ -215,7 +215,7 @@ set the relevant data in the request:
           </td>
           <td valign="top">
             <div class="tableForm">
-              <form action="http://127.0.0.1" method="post" enctype="multipart/form-data" class="edit-form" name="form" id="form">
+              <form action="http://127.0.0.1" method="post" enctype="multipart/form-data" class="edit-form" id="form" name="form">
     <div class="viewspace">
         <div class="required-info">
            <span class="required">*</span>&ndash; required
@@ -277,7 +277,7 @@ Clicking the ``Edit`` button at the same time should hold the same result:
   >>> selectedItemTable.__name__ = 'view.html'
   >>> selectedItemTable.update()
   >>> print selectedItemTable.render()
-  <form action="http://127.0.0.1" method="post" enctype="multipart/form-data" class="edit-form" name="subFormTable" id="subFormTable">
+  <form action="http://127.0.0.1" method="post" enctype="multipart/form-data" class="edit-form" id="subFormTable" name="subFormTable">
     <div class="viewspace">
       <div>
       <table width="100%" border="0" cellspacing="0" cellpadding="0">
@@ -306,7 +306,7 @@ Clicking the ``Edit`` button at the same time should hold the same result:
           </td>
           <td valign="top">
             <div class="tableForm">
-              <form action="http://127.0.0.1" method="post" enctype="multipart/form-data" class="edit-form" name="form" id="form">
+              <form action="http://127.0.0.1" method="post" enctype="multipart/form-data" class="edit-form" id="form" name="form">
     <div class="viewspace">
         <div class="required-info">
            <span class="required">*</span>&ndash; required
@@ -371,7 +371,7 @@ In this case the editform won't appear.
   >>> print selectedItemTable.render()
     <form action="http://127.0.0.1" method="post"
         enctype="multipart/form-data" class="edit-form"
-        name="subFormTable" id="subFormTable">
+        id="subFormTable" name="subFormTable">
     <div class="viewspace">
       <div>
       <table width="100%" border="0" cellspacing="0" cellpadding="0">

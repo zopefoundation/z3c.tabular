@@ -50,10 +50,13 @@ class TestFormTable(z3c.testing.InterfaceBaseTest):
 
 
 def test_suite():
+    optionflags = (doctest.NORMALIZE_WHITESPACE
+                   |doctest.ELLIPSIS
+                   |doctest.REPORT_NDIFF)
     return unittest.TestSuite((
         doctest.DocFileSuite('README.txt',
             setUp=testing.setUp, tearDown=testing.tearDown,
-            optionflags=doctest.NORMALIZE_WHITESPACE|doctest.ELLIPSIS,
+            optionflags=optionflags,
             ),
         unittest.makeSuite(TestFormTable),
         ))

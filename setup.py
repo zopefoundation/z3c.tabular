@@ -61,6 +61,7 @@ setup (
             'zope.browserpage',
             'zope.publisher',
             'zope.testing',
+            'zope.tal >= 4.0.0a', # attribute order changes
             ],
         ),
     install_requires = [
